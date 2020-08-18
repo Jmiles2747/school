@@ -18,7 +18,9 @@
     h1 {color:pink}
     #green {color:green}
     .underlined { text-decoration: underline;}
-    #first-section {color:blue}
+    #first-section {color:blue;background-color:pink;width:200px;float:right}
+    #second-section {background-color:yellow;float:left;width:200px}
+    .clear-float {clear:both;}
     </style>
 </head>
 
@@ -28,7 +30,12 @@
         <p>the quick brown fox jumped over the lazy dog</p>
         <p>Wow i love css!</p>
     </div>
-    <p id="green">This is some more text!<span class="red underlined">id's can only be used once per page </span></p>
+    <div id="second-section">
+        <p id="green">This is some more text!<span class="red underlined">id's can only be used once per page </span></p>
+        </div>
+    <div>
+    <p class="clear-float">This paragraph is not a float so it will start under the top floats</p>
+    </div>
 </body>
 
 </html>
