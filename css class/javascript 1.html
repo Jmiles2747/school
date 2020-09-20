@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
     <p id="text">Hello World!</p>
     
     <button id="myButton">Change text</button> 
@@ -17,6 +18,13 @@
 
      <button id="secondButton">Append text</button>
 
+ <p id="thirdPargagraph">Javascript is ... </p>
+
+     <button id="thirdButton">Append text</button>
+
+    <p id="emptyPargagraph"> </p>
+
+     <button id="createParagraph">Create text</button>
         
         <script type="text/javascript">
 
@@ -25,10 +33,19 @@
                 document.getElementById("text") .innerHTML = "Hello Joel!";
                 
                 
-            }  document.getElementById("secondButton") .onclick = function() {
+            }  
+            document.getElementById("secondButton") .onclick = function() {
                 
-                document.getElementById("secondPargagraph") .innerHTML = "Hello Rob!";
+                document.getElementById("secondPargagraph") .innerHTML = document.getElementById("secondPargagraph") .innerHTML + "awesome!";
             }
+             document.getElementById("thirdButton") .onclick = function() {
+                
+                document.getElementById("thirdPargagraph") .innerHTML = "I think " + document.getElementById("secondPargagraph") .innerHTML + "awesome!";
+            }
+             document.getElementById("createparagraph") .onclick = function() {
+                
+                document.getElementById("emptyParagraph") .innerHTML = "This is the start of something new";
+             }
 
         </script>
 
